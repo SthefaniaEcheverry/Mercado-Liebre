@@ -3,31 +3,117 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root {
-        --primaryFont: 'Roboto', sans-serif;
-        --secondaryFont:'Lobster', cursive;
-        --sm: 16px;
-        --md: 18px;
-        --lg: 24px;
-        --ssm: 12px;
-        --amarillo: #EAC926;
-        --azul: #03264C;
-        --celeste: #1259c3;
-        --grisOscuro: #666;
-        --grisClaro: #ebebeb;
-        --verde: #39b54a;
-    }
-    
-.header{
+    --primaryFont: 'Roboto', sans-serif;
+    --secondaryFont: 'Lobster', cursive;
+    --sm: 1rem;
+    --md: 1.125rem;
+    --lg: 1.5rem;
+    --ssm: 0.75rem;
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+html{
+    font-family: var(--primaryFont);
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    text-align: center;
+    color: var(--azul);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
     background-color: var(--amarillo);
 }
 
+.logo {
+    width: 50%;
+    padding: 1rem;
+    margin: auto;
+}
 
+.busqueda {
+    margin: auto;
+    display: flex;
+    padding: 1rem;
+}
 
-    /* Cuerpos de texto: 12px
-Titulares (Basado en tu última visita/Ofertas): 24px
-Precios: 18px
-Descuentos: 16px
-Descripciones: 16px */
+.buscador {
+    width: 80%;
+    margin-left: 1.25rem;
+}
+
+.compras {
+    display: flex;
+    padding: 1rem;
+    margin: auto;
+}
+
+.personal {
+    padding-top: 1rem;
+}
+
+.burger-menu {
+    margin: auto;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--celeste);
+    color: var(--grisClaro);
+    border-radius: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.banner {
+    width: 100%
+}
+
+.cards {
+    width: 90% ;
+    margin: 0 auto;
+    margin-top: 0.625rem;
+    text-align: center; 
+}
+
+.products {
+    width: 100%;
+}
+
+.icono-footer {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--celeste);
+}
+
+.sectionsFooter {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.copyRight {
+    text-align: center;
+    margin-top: 3rem;
+}
