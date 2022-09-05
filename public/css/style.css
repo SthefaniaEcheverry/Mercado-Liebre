@@ -21,11 +21,11 @@
     --verde: #39b54a;
 }
 
-html{
+html {
     font-family: var(--primaryFont);
 }
 
-main{
+main {
     width: 100%;
     margin: 0 auto;
     background-color: var(--grisClaro);
@@ -37,14 +37,19 @@ ul {
     font-size: var(--ssm);
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
 h3 {
+    margin: 10px;
     text-align: center;
     font-size: var(--lg);
+}
+
+h4 {
+    display: none;
 }
 
 .header {
@@ -55,17 +60,21 @@ h3 {
     background-color: var(--amarillo);
 }
 
+.container-logo-buscador {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .logo {
-    width: 80%;
-    padding: 1rem;
-    margin: auto;
+    width: 50%;
+    margin-top: 20px;
 }
 
 .busqueda {
+    width: 50%;
     margin: auto;
     display: flex;
     padding: 1rem;
-    width: 90%;
 }
 
 .buscador {
@@ -78,6 +87,10 @@ h3 {
     padding: 1rem;
     margin: auto;
     font-size: var(--ssm);
+}
+
+.site-login {
+    display: none;
 }
 
 .personal {
@@ -101,10 +114,9 @@ h3 {
 }
 
 .cards {
-    width: 90% ;
+    width: 80%;
     margin: 0 auto;
     margin-top: 0.625rem;
-    text-align: center; 
 }
 
 .products {
@@ -112,29 +124,36 @@ h3 {
     padding-top: 0.031;
 }
 
-.description{
-    background:white;
+.description {
+    background: white;
     padding: 1rem;
     line-height: 1.5rem;
 }
 
-.fa-truck{
+.fa-truck {
     border: solid 0.1rem var(--verde);
     border-radius: 50%;
     padding: 1rem;
     color: var(--verde);
+
 }
 
-.price{
+.container-numbers {
+    display: flex;
+}
+
+.price {
+    width: 30%;
     font-size: var(--md);
 }
 
-.percentage{
+.percentage {
+    width: 70%;
     font-size: var(--sm);
     color: var(--verde);
 }
 
-h4{
+h4 {
     font-size: var(--sm);
     font-weight: normal;
     color: var(--grisOscuro);
@@ -160,21 +179,69 @@ h4{
     margin-top: 3rem;
 }
 
-footer{
+footer {
     padding-bottom: 1rem;
 }
 
-@media (max-width: 361px){
-    h4, li{
+@media (min-width: 361px) {
+    .logo {
+        width: 40%;
+    }
+
+    .busqueda {
+        width: 30%;
+    }
+
+    .compras {
+        width: 30%;
+
+    }
+
+    .container-logo-buscador {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .site-login {
+        display: flex;
+    }
+
+    .site-login ul{
+        gap: 15px;
+    }
+    .container-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        width: 40%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    h4 {
+        display: flex;
+    }
+
+    .burger-menu {
         display: none;
+    }
+
+    .contenedor-site-login {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .site-login ul {
+        display: flex;
     }
 }
 
-@media (min-width: 362px){
-    .cards{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .burger-menu{
-        display: none;
+@media (min-width: 769px) {
+    .cards {
+        width: 20%;
     }
 }
