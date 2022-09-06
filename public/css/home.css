@@ -53,10 +53,7 @@ h4 {
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+    padding: 20px;
     background-color: var(--amarillo);
 }
 
@@ -84,13 +81,16 @@ h4 {
 
 .compras {
     display: flex;
-    padding: 1rem;
-    margin: auto;
+    font-weight: normal;
+    align-items: center;
     font-size: var(--ssm);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.site-login {
+.main-navbar {
     display: none;
+    margin: 20px;
 }
 
 .personal {
@@ -98,15 +98,14 @@ h4 {
 }
 
 .burger-menu {
-    margin: auto;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     background-color: var(--celeste);
     color: var(--grisClaro);
+    display: block;
+    max-width: 30px;
+    padding: 7px 0;
     border-radius: 0.3rem;
-    width: 2rem;
-    height: 2rem;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .banner {
@@ -192,22 +191,19 @@ footer {
         width: 30%;
     }
 
-    .compras {
-        width: 30%;
-
-    }
-
     .container-logo-buscador {
         flex-wrap: nowrap;
         justify-content: space-between;
     }
 
-    .site-login {
+    .main-navbar {
         display: flex;
+        justify-content: space-between;
     }
 
-    .site-login ul{
-        gap: 15px;
+    .main-navbar ul{
+        display: flex;
+        gap: 10px;
     }
     .container-cards {
         display: flex;

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="/" method="post">
+            <h2>Foto de usuario</h2>
+            <input type="file" name="fotoDePerfil">
+
+            <h2>Información personal</h2>
+            <input type="text" name="name" placeholder="Nombre y apellido" required>
+            <input type="text" name="username" placeholder="Nombre de usuari@">
+            <input type="email" name="email" placeholder="email@gmail.com">
+            <input type="text" placeholder="Domicilio">
+
+            <h2>Fecha de nacimiento</h2>
+            <input type="date" name="date">
+
+            <h2>Perfil de usuario</h2>
+            <div>
+                <label for="">
+                    <input type="radio" name="type">
+                    Comprador
+                </label>
+                <label for="">
+                    <input type="radio" name="type">
+                    Vendedor
+                </label>
+            </div>
+            <h2>Intereses</h2>
+            <div>
+                <label for="a">
+                    <input type="checkbox" name="electro"> 
+                    Electro
+                </label>
+                <label for="b">
+                    <input type="checkbox" name="moda"> 
+                    Moda
+                </label>
+                <label for="c">
+                    <input type="checkbox" name="hogar"> 
+                    Hogar
+                </label>
+                <label for="d">
+                    <input type="checkbox" name="jugueteria"> 
+                    Juguetería
+                </label>
+                <label for="e">
+                    <input type="checkbox" name="vidaSana"> 
+                    Vida sana
+                </label>
+            </div>
+
+            <h2></h2>
+            <input type="password" name="password" placeholder="Contraseña">
+            <input type="password" name="ConfirmationPassword" placeholder="Confirmar contraseña">
+            <input type="text">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form> 
+    </main>
+</body>
+</html>
