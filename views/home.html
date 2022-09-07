@@ -11,34 +11,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/338760936c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/home.css">
-
-
 </head>
 
 <body>
     <header id="header" class="header">
-        <div class="container-logo-buscador">
+        <div class="container">
             <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo de mercado liebre">
             <div class="busqueda">
                 <input class="buscador" type="text" placeholder="Buscar productos">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-            <h2 class="compras">
+            <p class="compras">
                 <i class="fa-solid fa-hand-holding-dollar"></i>
                 Comprá en cuotas y sin tarjeta de crédito
-            </h2>
+            </p>
         </div>
 
         <nav class="main-navbar">
-            <ul class="left-navbar">
+            <ul>
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Tiendas oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
 
-            <ul class="right-navbar">
+            <ul>
                 <li>
                     <a href="/register">Creá tu cuenta</a>
                     <i class="fa-regular fa-address-card"></i>
@@ -54,9 +55,11 @@
                 </li>
             </ul>
         </nav>
-        <a href="#" class="burger-menu">
-            <i class="fas fa-bars"></i>
-        </a>
+        <div class="container-burguer">
+            <a href="#" class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
     </header>
 
     <main>
@@ -71,7 +74,7 @@
                         <p class="price">$6.770</p>
                         <p class="percentage">40% off</p>
                     </div>
-                    <h4>Cafetera Moulinex</h4>
+                    <h4 class="product-name">Cafetera Moulinex</h4>
                 </div>
             </div>
             <div class="cards">
@@ -82,7 +85,7 @@
                         <p class="price">$230.000</p>
                         <p class="percentage">20% off</p>
                     </div>
-                    <h4>MacBook Pro 2019</h4>
+                    <h4 class="product-name">MacBook Pro 2019</h4>
                 </div>
             </div>
             <div class="cards">
@@ -93,7 +96,7 @@
                         <p class="price">$70.500</p>
                         <p class="percentage">10% off</p>
                     </div>
-                    <h4>Samsung Galaxy S10</h4>
+                    <h4 class="product-name">Samsung Galaxy S10</h4>
                 </div>
             </div>
             <div class="cards">
@@ -104,7 +107,7 @@
                         <p class="price">$23.200</p>
                         <p class="percentage">5% off</p>
                     </div>
-                    <h4>SmartTv Samsung 43"</h4>
+                    <h4 class="product-name">SmartTv Samsung 43"</h4>
                 </div>
             </div>
         </div>
@@ -112,7 +115,6 @@
         <section>
             <h3>Ofertas</h3>
             <div class="container-cards">
-
                 <div class="cards">
                     <img class="products" src="/images/img-cafetera-moulinex.jpg" alt="Cafetera">
                     <div class="description">
@@ -121,7 +123,7 @@
                             <p class="price">$6.770</p>
                             <p class="percentage">40% off</p>
                         </div>
-                        <h4>Cafetera Moulinex</h4>
+                        <h4 class="product-name">Cafetera Moulinex</h4>
                     </div>
                 </div>
                 <div class="cards">
@@ -132,7 +134,7 @@
                             <p class="price">$230.000</p>
                             <p class="percentage">20% off</p>
                         </div>
-                        <h4>MacBook Pro 2019</h4>
+                        <h4 class="product-name">MacBook Pro 2019</h4>
                     </div>
                 </div>
                 <div class="cards">
@@ -143,7 +145,7 @@
                             <p class="price">$23.200</p>
                             <p class="percentage">5% off</p>
                         </div>
-                        <h4>Samsung Galaxy S10</h4>
+                        <h4 class="product-name">Samsung Galaxy S10</h4>
                     </div>
                 </div>
                 <div class="cards">
@@ -154,7 +156,7 @@
                             <p class="price">$23.200</p>
                             <p class="percentage">5% off</p>
                         </div>
-                        <h4>SmartTv Samsung 43"</h4>
+                        <h4 class="product-name">SmartTv Samsung 43"</h4>
                     </div>
                 </div>
             </div>

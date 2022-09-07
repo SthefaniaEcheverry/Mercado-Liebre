@@ -1,140 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-:root {
-    --primaryFont: 'Roboto', sans-serif;
-    --secondaryFont: 'Lobster', cursive;
-    --sm: 1rem;
-    --md: 1.125rem;
-    --lg: 1.5rem;
-    --ssm: 0.75rem;
-    --amarillo: #EAC926;
-    --azul: #03264C;
-    --celeste: #1259c3;
-    --grisOscuro: #666;
-    --grisClaro: #ebebeb;
-    --verde: #39b54a;
-}
-
-html {
-    font-family: var(--primaryFont);
-}
-
-main {
-    width: 100%;
-    margin: 0 auto;
-    background-color: var(--grisClaro);
-    padding-bottom: 2rem;
-}
-
-ul {
-    list-style: none;
-    font-size: var(--ssm);
-}
-
-a {
-    text-decoration: none;
-    color: black;
+.banner {
+    width: 100%
 }
 
 h3 {
     margin: 10px;
     text-align: center;
     font-size: var(--lg);
-}
-
-h4 {
-    display: none;
-}
-
-.header {
-    padding: 20px;
-    background-color: var(--amarillo);
-}
-
-.container-logo-buscador {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.logo {
-    width: 50%;
-    margin-top: 20px;
-}
-
-.busqueda {
-    width: 50%;
-    margin: auto;
-    display: flex;
-    padding: 1rem;
-}
-
-.buscador {
-    width: 80%;
-    margin-left: 1.25rem;
-}
-
-.compras {
-    display: flex;
-    font-weight: normal;
-    align-items: center;
-    font-size: var(--ssm);
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.main-navbar {
-    display: none;
-    margin: 20px;
-}
-
-.personal {
-    padding-top: 1rem;
-}
-
-.burger-menu {
-    background-color: var(--celeste);
-    color: var(--grisClaro);
-    display: block;
-    max-width: 30px;
-    padding: 7px 0;
-    border-radius: 0.3rem;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.banner {
-    width: 100%
+    color: var(--grisOscuro);
 }
 
 .cards {
-    width: 80%;
+    width: 15rem;
     margin: 0 auto;
     margin-top: 0.625rem;
 }
 
 .products {
     width: 100%;
-    padding-top: 0.031;
 }
 
 .description {
+    position: relative;
     background: white;
-    padding: 1rem;
     line-height: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
 
 .fa-truck {
-    border: solid 0.1rem var(--verde);
-    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: -25px;
     padding: 1rem;
+    border: solid 1px var(--verde);
+    border-radius: 50%;
     color: var(--verde);
-
+    font-size: 13px;
 }
 
 .container-numbers {
@@ -142,69 +44,24 @@ h4 {
 }
 
 .price {
-    width: 30%;
+    width: 6rem;
     font-size: var(--md);
 }
 
 .percentage {
-    width: 70%;
     font-size: var(--sm);
     color: var(--verde);
 }
 
-h4 {
+.product-name {
+    display: none;
     font-size: var(--sm);
     font-weight: normal;
     color: var(--grisOscuro);
     padding-top: 1rem;
 }
 
-.icono-footer {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    color: var(--celeste);
-}
-
-
-.sectionsFooter {
-    width: 70%;
-    margin: auto;
-    text-align: center;
-}
-
-.copyRight {
-    text-align: center;
-    margin-top: 3rem;
-}
-
-footer {
-    padding-bottom: 1rem;
-}
-
 @media (min-width: 361px) {
-    .logo {
-        width: 40%;
-    }
-
-    .busqueda {
-        width: 30%;
-    }
-
-    .container-logo-buscador {
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-
-    .main-navbar {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .main-navbar ul{
-        display: flex;
-        gap: 10px;
-    }
     .container-cards {
         display: flex;
         flex-wrap: wrap;
@@ -215,29 +72,23 @@ footer {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    h4 {
+    .container-numbers {
+        gap: 20px;
+    }
+
+    .product-name {
         display: flex;
     }
 
-    .burger-menu {
-        display: none;
-    }
-
-    .contenedor-site-login {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .site-login ul {
-        display: flex;
-    }
 }
 
 @media (min-width: 769px) {
     .cards {
-        width: 20%;
+        width: 13rem;
     }
+
+    .container-numbers {
+        gap: 1px;
+    }
+
 }

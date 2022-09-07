@@ -3,3 +3,122 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --primaryFont: 'Roboto', sans-serif;
+    --secondaryFont: 'Lobster', cursive;
+    --sm: 1rem;
+    --md: 1.125rem;
+    --lg: 1.5rem;
+    --ssm: 0.75rem;
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+html{
+    font-family: var(--primaryFont);
+}
+
+.title{
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+    color: var(--grisOscuro);
+}
+.container-file{
+    display: flex;
+    justify-content:center ;
+    padding: 20px;
+}
+
+.container-staff{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.container-staff input{
+    width: 15rem;
+    margin-top: 0.625rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1.25rem;
+}
+
+.container-date{
+    display: flex;
+    justify-content:center ;
+}
+
+.container-date input{
+    width: 10rem;
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+}
+
+.container-type-user{
+    display: flex;
+    justify-content:center ;
+    gap: 20px;
+  
+}
+
+.container-interests{
+    width: 6rem;
+    margin:  0 auto;
+}
+
+.container-interests label{
+    display: flex;
+    gap: 5px;
+    margin-top: 6px;
+}
+
+.container-security{
+    display: flex;
+    justify-content:center ;
+    gap: 20px;
+}
+.container-security input{
+    width: 9rem;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    gap: 5px;
+}
+
+.container-btn{
+    display: flex;
+    justify-content:center ;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.container-btn button{
+    width: 5rem;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    gap: 5px;
+    background-color: var(--amarillo);
+}
+
+
+@media (min-width: 361px){
+    .container-staff input{
+        width: 30rem;
+    }
+
+    .container-security input{
+        width: 13rem;
+    }
+    .container-btn button{
+        width: 8rem;
+    }
+}
