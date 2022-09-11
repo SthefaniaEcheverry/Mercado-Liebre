@@ -1,5 +1,5 @@
 .header {
-    padding: 20px;
+    padding: 1.25rem;
     background-color: var(--amarillo);
 }
 
@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 1.563rem;
 }
 
 .logo {
@@ -19,14 +19,14 @@
     height: 1.5rem;
     display: flex;
     align-self: flex-end;
-    border-radius: 30px;
+    border-radius: 1.875rem;
 }
 
 .buscador {
     width: 7rem;
     border: none;
     outline: none;
-    border-radius: 30px 0 0 30px;
+    border-radius: 1.875rem 0 0 1.875rem;
 }
 
 .container input::placeholder {
@@ -37,12 +37,13 @@
 .search-btn {
     border: none;
     background: white;
-    padding-right: 5px;
-    border-radius: 0 30px 30px 0;
+    padding-right: 0.313rem;
+    border-radius: 0 1.875rem 1.875rem 0;
 }
 
 .compras {
     font-size: var(--ssm);
+    text-align: center;
 }
 
 .main-navbar {
@@ -60,13 +61,13 @@ a {
 }
 
 .container-burguer {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 0.938rem;
+    margin-bottom: 0.938rem;
 }
 
 .burger-menu {
-    padding: 7px 0;
-    max-width: 30px;
+    padding: 0.438rem 0;
+    max-width: 1.875rem;
     display: block;
     text-align: center;
     margin: 0 auto;
@@ -75,30 +76,33 @@ a {
     border-radius: 0.3rem;
 }
 
-@media (min-width: 361px) {
-    .container {
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
+@media (min-width: 425px) {
     .logo {
-        width: 10rem;
+        width: 30%;
     }
 
     .buscador {
-        width: 10rem;
-        padding: 10px;
+        width: 13rem;
+        padding: 0.625rem;
+    }
+
+    .busqueda{
+        align-self: center;
+    }
+
+    .compras{
+        align-self: center;
     }
 
     .main-navbar {
         display: flex;
         justify-content: space-between;
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
 
     .main-navbar ul {
         display: flex;
-        gap: 13px;
+        gap: 0.813rem;
     }
 
     .container-cards {
@@ -112,7 +116,7 @@ a {
     }
 
     .container-numbers {
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .product-name {
@@ -124,41 +128,16 @@ a {
     }
 }
 
-@media (min-width: 361px) {
+@media (min-width: 1024px) {
     .container {
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
     }
 
-    .logo {
-        width: 10rem;
-    }
-
-    .buscador {
-        width: 10rem;
-        padding: 10px;
-    }
-
-    .main-navbar {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 40px;
-    }
-
-    .main-navbar ul {
-        display: flex;
-        gap: 13px;
-    }
-
-    .burger-menu {
-        display: none;
-    }
-}
-
-@media (min-width: 769px) {
     .logo {
         width: 20rem;
     }
+    
 
     .buscador {
         width: 25rem;
